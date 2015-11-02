@@ -233,7 +233,7 @@
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thw-3d-VM7">
-                                <rect key="frame" x="188" y="494" width="225" height="41"/>
+                                <rect key="frame" x="20" y="494" width="560" height="41"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.20392156859999999" green="0.31764705879999999" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -244,11 +244,17 @@
                                 <state key="normal" title="Add Scene">
                                     <color key="titleColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="eeN-BJ-XGE"/>
+                                    </mask>
+                                </variation>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="thw-3d-VM7" firstAttribute="leading" secondItem="6DB-Gb-INv" secondAttribute="leadingMargin" id="0Pt-9A-Fs0"/>
                             <constraint firstItem="Tp0-cf-lZH" firstAttribute="top" secondItem="6DB-Gb-INv" secondAttribute="top" id="9Si-1a-eXJ"/>
                             <constraint firstItem="91I-3z-XBg" firstAttribute="centerX" secondItem="6DB-Gb-INv" secondAttribute="centerX" id="Doz-ke-O2Y"/>
                             <constraint firstItem="9yw-kk-CYG" firstAttribute="centerX" secondItem="91I-3z-XBg" secondAttribute="centerX" id="EOG-gn-trY"/>
@@ -256,6 +262,7 @@
                             <constraint firstAttribute="trailing" secondItem="Tp0-cf-lZH" secondAttribute="trailing" id="KFl-sd-YSI"/>
                             <constraint firstItem="Tp0-cf-lZH" firstAttribute="leading" secondItem="6DB-Gb-INv" secondAttribute="leading" id="LKE-cD-WRF"/>
                             <constraint firstItem="thw-3d-VM7" firstAttribute="top" secondItem="oFS-TR-i7j" secondAttribute="bottom" constant="25" id="Nei-4s-NB3"/>
+                            <constraint firstItem="thw-3d-VM7" firstAttribute="trailing" secondItem="6DB-Gb-INv" secondAttribute="trailingMargin" id="Pj0-0d-rFR"/>
                             <constraint firstItem="91I-3z-XBg" firstAttribute="top" secondItem="Tp0-cf-lZH" secondAttribute="bottom" constant="35" id="WAV-Vx-IC6"/>
                             <constraint firstItem="9yw-kk-CYG" firstAttribute="centerY" secondItem="91I-3z-XBg" secondAttribute="centerY" id="Y8T-us-xe2"/>
                             <constraint firstItem="oFS-TR-i7j" firstAttribute="leading" secondItem="6DB-Gb-INv" secondAttribute="leadingMargin" id="bQv-OJ-SPh"/>
