@@ -14,6 +14,7 @@
 		8FC2CF731BE7BC9F00C380AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC2CF711BE7BC9F00C380AA /* LaunchScreen.storyboard */; };
 		8FC2CF7C1BE7BD7900C380AA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2CF7B1BE7BD7900C380AA /* Post.swift */; };
 		8FC2CF7F1BE7CDAD00C380AA /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2CF7E1BE7CDAD00C380AA /* PostCell.swift */; };
+		8FC2CF821BE7D49B00C380AA /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC2CF811BE7D49B00C380AA /* AddPostVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8FC2CF741BE7BC9F00C380AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FC2CF7B1BE7BD7900C380AA /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		8FC2CF7E1BE7CDAD00C380AA /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		8FC2CF811BE7D49B00C380AA /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +62,8 @@
 			children = (
 				8FC2CF7A1BE7BD5800C380AA /* Model */,
 				8FC2CF7D1BE7CD7A00C380AA /* View */,
+				8FC2CF801BE7D42900C380AA /* Controller */,
 				8FC2CF681BE7BC9F00C380AA /* AppDelegate.swift */,
-				8FC2CF6A1BE7BC9F00C380AA /* ViewController.swift */,
 				8FC2CF6C1BE7BC9F00C380AA /* Main.storyboard */,
 				8FC2CF6F1BE7BC9F00C380AA /* Assets.xcassets */,
 				8FC2CF711BE7BC9F00C380AA /* LaunchScreen.storyboard */,
@@ -84,6 +86,15 @@
 				8FC2CF7E1BE7CDAD00C380AA /* PostCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		8FC2CF801BE7D42900C380AA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8FC2CF6A1BE7BC9F00C380AA /* ViewController.swift */,
+				8FC2CF811BE7D49B00C380AA /* AddPostVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +171,7 @@
 			files = (
 				8FC2CF7C1BE7BD7900C380AA /* Post.swift in Sources */,
 				8FC2CF6B1BE7BC9F00C380AA /* ViewController.swift in Sources */,
+				8FC2CF821BE7D49B00C380AA /* AddPostVC.swift in Sources */,
 				8FC2CF691BE7BC9F00C380AA /* AppDelegate.swift in Sources */,
 				8FC2CF7F1BE7CDAD00C380AA /* PostCell.swift in Sources */,
 			);

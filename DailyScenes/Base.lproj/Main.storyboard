@@ -29,6 +29,9 @@
                                             <constraint firstAttribute="width" constant="41" id="v1J-T6-F0Y"/>
                                         </constraints>
                                         <state key="normal" image="camera"/>
+                                        <connections>
+                                            <segue destination="62H-q7-emz" kind="show" identifier="AddPostVC" id="Jf7-EF-Ifa"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Scenes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPf-F9-1dp">
                                         <rect key="frame" x="246.5" y="8" width="108" height="48"/>
@@ -148,6 +151,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="385" y="297"/>
+        </scene>
+        <!--Add PostVC-->
+        <scene sceneID="NlX-Ko-8cZ">
+            <objects>
+                <viewController id="62H-q7-emz" customClass="AddPostVC" customModule="DailyScenes" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7nM-S4-swT"/>
+                        <viewControllerLayoutGuide type="bottom" id="v84-Ht-Fde"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6DB-Gb-INv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mJm-zb-eTF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1081" y="297"/>
         </scene>
     </scenes>
     <resources>
