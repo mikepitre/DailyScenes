@@ -14,6 +14,7 @@ class AddPostVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     @IBOutlet weak var titleField: UITextField!
     @IBOutlet weak var descField: UITextField!
     
+    var keyboardShowing = false
     
     var imagePicker: UIImagePickerController!
     
@@ -69,11 +70,15 @@ class AddPostVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
    //moving view for keyboard
     
     func keyboardWillShow(sender: NSNotification) {
-        self.view.frame.origin.y -= 150
+        if !keyboardShowing {
+            self.view.frame.origin.y -= 150
+            keyboardShowing = true
+        }
     }
     
     func keyboardWillHide(sender: NSNotification) {
         self.view.frame.origin.y += 150
+        keyboardShowing = false
     }
     
 }
