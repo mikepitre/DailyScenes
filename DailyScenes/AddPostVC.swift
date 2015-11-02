@@ -17,6 +17,9 @@ class AddPostVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        addSceneImage.layer.cornerRadius = addSceneImage.frame.size.width / 2
+        addSceneImage.clipsToBounds = true
     }
 
     
