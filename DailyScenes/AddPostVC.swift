@@ -31,6 +31,7 @@ class AddPostVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         if let title = titleField.text, let desc = descField.text, let image = addSceneImage.image {
             let post = Post(imagePath: "", title: title, description: desc)
             DataService.instance.addPost(post)
+            dismissViewControllerAnimated(true, completion: nil)
         }
     }
     

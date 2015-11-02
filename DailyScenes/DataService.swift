@@ -48,4 +48,17 @@ class DataService {
         savePosts()
         loadPosts()
     }
+    
+    func documentsPathForFileName(name: String) -> String {
+        
+    }
 }
+
+
+
+
+
+
+
+
+
