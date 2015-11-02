@@ -181,6 +181,9 @@
                                         <state key="normal" title="Cancel">
                                             <color key="titleColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="cancelBtnPressed:" destination="62H-q7-emz" eventType="touchUpInside" id="jtr-hw-kpe"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <animations/>
@@ -210,7 +213,13 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yw-kk-CYG">
                                 <rect key="frame" x="180" y="99" width="240" height="240"/>
                                 <animations/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="+ Add Pic">
+                                    <color key="titleColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addPicBtnPressed:" destination="62H-q7-emz" eventType="touchUpInside" id="wGe-DO-Wb7"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LGa-XT-KlP">
                                 <rect key="frame" x="20" y="364" width="560" height="40"/>
@@ -249,6 +258,9 @@
                                         <exclude reference="eeN-BJ-XGE"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="addSceneBtnPressed:" destination="62H-q7-emz" eventType="touchUpInside" id="TJU-Wu-tkz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -275,6 +287,11 @@
                             <constraint firstItem="LGa-XT-KlP" firstAttribute="leading" secondItem="6DB-Gb-INv" secondAttribute="leadingMargin" id="toG-xz-fhQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addSceneImage" destination="91I-3z-XBg" id="X11-WV-35j"/>
+                        <outlet property="descField" destination="oFS-TR-i7j" id="12L-Ol-p3U"/>
+                        <outlet property="titleField" destination="LGa-XT-KlP" id="nOm-3f-l5H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mJm-zb-eTF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
