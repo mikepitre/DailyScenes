@@ -29,7 +29,8 @@ class AddPostVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     
     @IBAction func addSceneBtnPressed(sender: UIButton) {
         if let title = titleField.text, let desc = descField.text, let image = addSceneImage.image {
-            let post = Post(imagePath: "", title: title, description: desc)
+            let imagePath = DataService.instance.saveImageAndCreatePath(image)
+            let post = Post(imagePath: imagePath, title: title, description: desc)
             DataService.instance.addPost(post)
             dismissViewControllerAnimated(true, completion: nil)
         }
