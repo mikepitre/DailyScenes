@@ -24,5 +24,10 @@ class PostCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func configureCell(post: Post) {
+        titleLabel.text = post.title
+        descLabel.text = post.postDesc
+    }
 
 }
