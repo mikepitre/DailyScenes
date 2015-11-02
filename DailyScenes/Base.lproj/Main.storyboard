@@ -49,16 +49,16 @@
                                     <constraint firstAttribute="bottom" secondItem="fMw-PZ-kjP" secondAttribute="bottom" constant="8" id="wof-h9-xxK"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="149" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JbL-8b-rCM">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="149" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JbL-8b-rCM">
                                 <rect key="frame" x="20" y="84" width="560" height="496"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="149" id="1dj-CZ-Bbk">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="149" id="1dj-CZ-Bbk" customClass="PostCell" customModule="DailyScenes" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="560" height="149"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="1dj-CZ-Bbk" id="Thb-GM-ADR">
-                                            <rect key="frame" x="0.0" y="0.0" width="560" height="148.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="149"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="6873995-Beach_and_cliff_edge_at_Torrey_Pines_San_Diego" translatesAutoresizingMaskIntoConstraints="NO" id="lrO-DW-vGh">
@@ -120,6 +120,11 @@
                                         </tableViewCellContentView>
                                         <animations/>
                                         <color key="backgroundColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="descLabel" destination="bwN-2c-BSe" id="zUD-U5-I4t"/>
+                                            <outlet property="postImage" destination="lrO-DW-vGh" id="Bxm-qI-M0L"/>
+                                            <outlet property="titleLabel" destination="uIi-ol-f1m" id="Y3t-Gd-ETh"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -136,6 +141,9 @@
                             <constraint firstItem="9lG-PW-ywp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sfl-AB-uMV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="JbL-8b-rCM" id="LOg-Ks-Rx3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
