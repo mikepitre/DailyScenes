@@ -52,7 +52,7 @@
                                     <constraint firstAttribute="bottom" secondItem="fMw-PZ-kjP" secondAttribute="bottom" constant="8" id="wof-h9-xxK"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="149" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JbL-8b-rCM">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="149" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JbL-8b-rCM">
                                 <rect key="frame" x="20" y="84" width="560" height="496"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -61,7 +61,7 @@
                                         <rect key="frame" x="0.0" y="28" width="560" height="149"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="1dj-CZ-Bbk" id="Thb-GM-ADR">
-                                            <rect key="frame" x="0.0" y="0.0" width="560" height="149"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="148.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="6873995-Beach_and_cliff_edge_at_Torrey_Pines_San_Diego" translatesAutoresizingMaskIntoConstraints="NO" id="lrO-DW-vGh">
@@ -91,15 +91,21 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="bwN-2c-BSe">
-                                                    <rect key="frame" x="151" y="27" width="401" height="113.5"/>
+                                                    <rect key="frame" x="151" y="44" width="401" height="85.5"/>
                                                     <animations/>
                                                     <constraints>
+                                                        <constraint firstAttribute="height" constant="85.5" id="quU-ep-Mnr"/>
                                                         <constraint firstAttribute="height" constant="113.5" id="yoD-sN-DT4"/>
                                                     </constraints>
                                                     <string key="text">Beautiful cliffs in San Diego, CA. Can't wait to come back here. I would love to live here some day. The weather is perfect and the beaches are amazing. The city has a very laid back vibe.</string>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="yoD-sN-DT4"/>
+                                                        </mask>
+                                                    </variation>
                                                 </label>
                                             </subviews>
                                             <animations/>
@@ -114,9 +120,11 @@
                                                 <constraint firstItem="lrO-DW-vGh" firstAttribute="leading" secondItem="Thb-GM-ADR" secondAttribute="leadingMargin" id="bO5-HW-VTW"/>
                                                 <constraint firstItem="bwN-2c-BSe" firstAttribute="bottom" secondItem="Thb-GM-ADR" secondAttribute="bottomMargin" id="nwF-L1-Pwc"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="lrO-DW-vGh" secondAttribute="bottom" id="reV-if-nen"/>
+                                                <constraint firstItem="bwN-2c-BSe" firstAttribute="top" secondItem="Thb-GM-ADR" secondAttribute="topMargin" constant="36" id="vPU-oE-GeT"/>
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="constraints">
+                                                    <exclude reference="4Di-7X-i09"/>
                                                     <exclude reference="nwF-L1-Pwc"/>
                                                 </mask>
                                             </variation>
