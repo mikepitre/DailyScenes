@@ -71,13 +71,13 @@ class AddPostVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     
     func keyboardWillShow(sender: NSNotification) {
         if !keyboardShowing {
-            self.view.frame.origin.y -= 150
+            self.view.frame.origin.y -= 250
             keyboardShowing = true
         }
     }
     
     func keyboardWillHide(sender: NSNotification) {
-        self.view.frame.origin.y += 150
+        self.view.frame.origin.y += 250
         keyboardShowing = false
     }
     
