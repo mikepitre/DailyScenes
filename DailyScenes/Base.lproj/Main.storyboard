@@ -30,19 +30,98 @@
                                         </constraints>
                                         <state key="normal" image="camera"/>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Scenes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPf-F9-1dp">
+                                        <rect key="frame" x="246.5" y="8" width="108" height="48"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="22"/>
+                                        <color key="textColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" red="0.20392156862745098" green="0.31764705882352939" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="YPf-F9-1dp" firstAttribute="centerX" secondItem="9lG-PW-ywp" secondAttribute="centerX" id="Sg3-Ce-B6E"/>
+                                    <constraint firstAttribute="bottom" secondItem="YPf-F9-1dp" secondAttribute="bottom" constant="8" id="W1E-0W-t7N"/>
                                     <constraint firstAttribute="height" constant="64" id="XfW-0z-lIY"/>
+                                    <constraint firstItem="YPf-F9-1dp" firstAttribute="centerY" secondItem="9lG-PW-ywp" secondAttribute="centerY" id="YUy-RX-rQI"/>
                                     <constraint firstAttribute="trailing" secondItem="fMw-PZ-kjP" secondAttribute="trailing" constant="8" id="ob2-q3-1ve"/>
                                     <constraint firstAttribute="bottom" secondItem="fMw-PZ-kjP" secondAttribute="bottom" constant="8" id="wof-h9-xxK"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JbL-8b-rCM">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="149" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JbL-8b-rCM">
                                 <rect key="frame" x="20" y="84" width="560" height="496"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="149" id="1dj-CZ-Bbk">
+                                        <rect key="frame" x="0.0" y="28" width="560" height="149"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="1dj-CZ-Bbk" id="Thb-GM-ADR">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="148.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="6873995-Beach_and_cliff_edge_at_Torrey_Pines_San_Diego" translatesAutoresizingMaskIntoConstraints="NO" id="lrO-DW-vGh">
+                                                    <rect key="frame" x="8" y="8" width="135" height="135"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="4MM-db-dPb"/>
+                                                        <constraint firstAttribute="height" constant="135" id="GWP-Yk-kAy"/>
+                                                        <constraint firstAttribute="height" constant="70" id="rKi-ph-3B6"/>
+                                                        <constraint firstAttribute="width" constant="135" id="zdi-rQ-KY3"/>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="4MM-db-dPb"/>
+                                                            <exclude reference="rKi-ph-3B6"/>
+                                                        </mask>
+                                                    </variation>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="San Diego Cliffs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="uIi-ol-f1m">
+                                                    <rect key="frame" x="151" y="8" width="401" height="40"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="1E1-YJ-LlC"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="bwN-2c-BSe">
+                                                    <rect key="frame" x="151" y="27" width="401" height="113.5"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="113.5" id="yoD-sN-DT4"/>
+                                                    </constraints>
+                                                    <string key="text">Beautiful cliffs in San Diego, CA. Can't wait to come back here. I would love to live here some day. The weather is perfect and the beaches are amazing. The city has a very laid back vibe.</string>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstItem="uIi-ol-f1m" firstAttribute="leading" secondItem="lrO-DW-vGh" secondAttribute="trailing" constant="8" id="2UJ-9D-myu"/>
+                                                <constraint firstItem="bwN-2c-BSe" firstAttribute="top" secondItem="Thb-GM-ADR" secondAttribute="topMargin" constant="19" id="4Di-7X-i09"/>
+                                                <constraint firstItem="bwN-2c-BSe" firstAttribute="leading" secondItem="lrO-DW-vGh" secondAttribute="trailing" constant="8" id="AyO-uq-Ric"/>
+                                                <constraint firstItem="uIi-ol-f1m" firstAttribute="top" secondItem="Thb-GM-ADR" secondAttribute="topMargin" id="CoX-I7-mMW"/>
+                                                <constraint firstItem="uIi-ol-f1m" firstAttribute="trailing" secondItem="Thb-GM-ADR" secondAttribute="trailingMargin" id="FYk-6E-08l"/>
+                                                <constraint firstItem="bwN-2c-BSe" firstAttribute="trailing" secondItem="Thb-GM-ADR" secondAttribute="trailingMargin" id="Wlm-vF-dVM"/>
+                                                <constraint firstItem="lrO-DW-vGh" firstAttribute="top" secondItem="Thb-GM-ADR" secondAttribute="topMargin" id="Zfh-Hd-8t7"/>
+                                                <constraint firstItem="lrO-DW-vGh" firstAttribute="leading" secondItem="Thb-GM-ADR" secondAttribute="leadingMargin" id="bO5-HW-VTW"/>
+                                                <constraint firstItem="bwN-2c-BSe" firstAttribute="bottom" secondItem="Thb-GM-ADR" secondAttribute="bottomMargin" id="nwF-L1-Pwc"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="lrO-DW-vGh" secondAttribute="bottom" id="reV-if-nen"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="nwF-L1-Pwc"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <animations/>
@@ -64,6 +143,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="6873995-Beach_and_cliff_edge_at_Torrey_Pines_San_Diego" width="1600" height="1200"/>
         <image name="camera" width="100" height="77"/>
     </resources>
 </document>
