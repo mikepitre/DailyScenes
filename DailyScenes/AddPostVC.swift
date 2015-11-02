@@ -14,8 +14,8 @@ class AddPostVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     @IBOutlet weak var titleField: UITextField!
     @IBOutlet weak var descField: UITextField!
     
-    var imagePicker: UIImagePickerController!
     
+    var imagePicker: UIImagePickerController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +26,10 @@ class AddPostVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         imagePicker.delegate = self
         titleField.delegate = self
         descField.delegate = self
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name:UIKeyboardWillShowNotification, object: nil);
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name:UIKeyboardWillHideNotification, object: nil);
+        
     }
 
     
@@ -62,5 +66,14 @@ class AddPostVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
         return true
     }
     
+   //moving view for keyboard
+    
+    func keyboardWillShow(sender: NSNotification) {
+        self.view.frame.origin.y -= 150
+    }
+    
+    func keyboardWillHide(sender: NSNotification) {
+        self.view.frame.origin.y += 150
+    }
     
 }
