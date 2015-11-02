@@ -49,6 +49,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return DataService.instance.loadedPosts.count
     }
     
+    
     func onPostsLoaded(notif: AnyObject) {
         tableView.reloadData()
     }

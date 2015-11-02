@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddPostVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class AddPostVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
     @IBOutlet weak var addSceneImage: UIImageView!
     @IBOutlet weak var titleField: UITextField!
@@ -48,6 +48,10 @@ class AddPostVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
         imagePicker.dismissViewControllerAnimated(true, completion: nil)
         addSceneImage.image = image
+    }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
 }
