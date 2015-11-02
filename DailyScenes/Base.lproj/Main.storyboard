@@ -34,7 +34,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Scenes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPf-F9-1dp">
-                                        <rect key="frame" x="246.5" y="8" width="108" height="48"/>
+                                        <rect key="frame" x="246.5" y="18" width="108" height="38"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="22"/>
                                         <color key="textColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -47,7 +47,7 @@
                                     <constraint firstItem="YPf-F9-1dp" firstAttribute="centerX" secondItem="9lG-PW-ywp" secondAttribute="centerX" id="Sg3-Ce-B6E"/>
                                     <constraint firstAttribute="bottom" secondItem="YPf-F9-1dp" secondAttribute="bottom" constant="8" id="W1E-0W-t7N"/>
                                     <constraint firstAttribute="height" constant="64" id="XfW-0z-lIY"/>
-                                    <constraint firstItem="YPf-F9-1dp" firstAttribute="centerY" secondItem="9lG-PW-ywp" secondAttribute="centerY" id="YUy-RX-rQI"/>
+                                    <constraint firstItem="YPf-F9-1dp" firstAttribute="centerY" secondItem="9lG-PW-ywp" secondAttribute="centerY" constant="5" id="YUy-RX-rQI"/>
                                     <constraint firstAttribute="trailing" secondItem="fMw-PZ-kjP" secondAttribute="trailing" constant="8" id="ob2-q3-1ve"/>
                                     <constraint firstAttribute="bottom" secondItem="fMw-PZ-kjP" secondAttribute="bottom" constant="8" id="wof-h9-xxK"/>
                                 </constraints>
@@ -176,14 +176,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Scene" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6o2-Yk-YEy">
-                                        <rect key="frame" x="254" y="14.5" width="93.5" height="35.5"/>
+                                        <rect key="frame" x="254" y="19.5" width="93.5" height="35.5"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="22"/>
                                         <color key="textColor" red="1" green="1" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgC-Gq-bgA">
-                                        <rect key="frame" x="8" y="17" width="45" height="30"/>
+                                        <rect key="frame" x="8" y="22" width="45" height="30"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
                                         <state key="normal" title="Cancel">
@@ -201,8 +201,8 @@
                                     <constraint firstAttribute="height" constant="64" id="mhd-6v-HPt"/>
                                     <constraint firstAttribute="bottom" secondItem="6o2-Yk-YEy" secondAttribute="bottom" constant="8" id="pMN-KQ-75j"/>
                                     <constraint firstItem="OgC-Gq-bgA" firstAttribute="leading" secondItem="Tp0-cf-lZH" secondAttribute="leading" constant="8" id="sWr-jY-XBJ"/>
-                                    <constraint firstItem="6o2-Yk-YEy" firstAttribute="centerY" secondItem="Tp0-cf-lZH" secondAttribute="centerY" id="x1e-7W-JGu"/>
-                                    <constraint firstItem="OgC-Gq-bgA" firstAttribute="centerY" secondItem="Tp0-cf-lZH" secondAttribute="centerY" id="ySS-fC-jZf"/>
+                                    <constraint firstItem="6o2-Yk-YEy" firstAttribute="centerY" secondItem="Tp0-cf-lZH" secondAttribute="centerY" constant="5" id="x1e-7W-JGu"/>
+                                    <constraint firstItem="OgC-Gq-bgA" firstAttribute="centerY" secondItem="Tp0-cf-lZH" secondAttribute="centerY" constant="5" id="ySS-fC-jZf"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
